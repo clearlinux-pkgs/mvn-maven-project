@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-project
 Version  : 2.0.6
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.1/maven-project-2.0.1.jar
@@ -14,25 +14,24 @@ Source4  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.10/
 Source5  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar
 Source6  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom
 Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
-Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.jar
-Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.pom
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar
-Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
-Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
-Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
-Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
-Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar
-Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom
-Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
-Source19  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.5/maven-project-2.0.5.pom
+Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
+Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar
+Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom
+Source19  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+Source20  : https://repo1.maven.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: mvn-maven-project-data = %{version}-%{release}
 Requires: mvn-maven-project-license = %{version}-%{release}
-BuildRequires : apache-maven
-BuildRequires : buildreq-mvn
 
 %description
 No detailed description available
@@ -85,41 +84,44 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.4
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.5
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.5/maven-project-2.0.5.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.6
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.jar
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0
-cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.0/maven-project-2.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1
-cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
 
 
 %files
@@ -134,6 +136,7 @@ cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.5/maven-project-2.0.5.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.jar
